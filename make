@@ -1,5 +1,13 @@
 #!/bin/sh
 
+if [ "$1" = "libOpenCOR" -o "$1" = "OpenCOR" ]; then
+    mode=$1
+elif [ "$1" != "" ]; then
+    echo "Usage: $0 [libOpenCOR|OpenCOR]"
+
+    exit 1
+fi
+
 if [ "`hash ninja 2>&1`" = "" ]; then
     ninjaFound=true
     generator="Ninja"
@@ -14,7 +22,7 @@ echo "\033[44;37;1mMaking the general documentation for [lib]OpenCOR (using $gen
 
 cd build
 
-cmake -G "$cmakeGenerator" ..
+cmake -G "$cmakeGenerator" -DMODE=$mode ..
 
 exitCode=$?
 

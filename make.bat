@@ -2,6 +2,16 @@
 
 SETLOCAL ENABLEDELAYEDEXPANSION
 
+IF "%1" == "libOpenCOR" (
+    SET Mode=%1
+) ELSE IF "%1" == "OpenCOR" (
+    SET Mode=%1
+) ELSE IF NOT "%1" == "" (
+    ECHO Usage: %0 [libOpenCOR^|OpenCOR]
+
+    EXIT /B 1
+)
+
 FOR %%X IN (ninja.exe) DO (
     SET NinjaFound=%%~$PATH:X
 )
@@ -14,17 +24,23 @@ IF DEFINED NinjaFound (
 
 TITLE Making the general documentation for [lib]OpenCOR (using !Generator!)...
 
-CALL "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\amd64\vcvars64.bat"
+IF NOT DEFINED NinjaFound (
+    IF EXIST "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat" (
+        CALL "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"
+    ) ELSE (
+        CALL "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
+    )
+)
 
 CD build
 
 IF DEFINED NinjaFound (
     SET CMakeGenerator=Ninja
 ) ELSE (
-    SET CMakeGenerator=NMake Makefiles JOM
+    SET CMakeGenerator=NMake Makefiles
 )
 
-cmake -G "!CMakeGenerator!" ..
+cmake -G "!CMakeGenerator!" -DMODE=!Mode! ..
 
 SET ExitCode=!ERRORLEVEL!
 
@@ -38,7 +54,7 @@ IF !ExitCode! EQU 0 (
 
         SET ExitCode=!ERRORLEVEL!
     ) ELSE (
-        jom !Args!
+        nmake /f Makefile !Args!
 
         SET ExitCode=!ERRORLEVEL!
     )
