@@ -26,7 +26,7 @@
             <ul>
                 <li><a href="whatIsNew.html">What is new?</a></li>
             </ul>
-${PROJECT_TUTORIAL}
+${PROJECT_TUTORIAL_LISTING_ENTRY}
             <ul>
                 <li><a href="user/index.html">User documentation</a></li>
                 <li><a href="developer/index.html">Developer documentation</a></li>

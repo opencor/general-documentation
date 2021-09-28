@@ -21,7 +21,7 @@
         </script>
 
         <p>
-            Official versions of OpenCOR can be found below, as well as on <a href="https://github.com/opencor/opencor/releases">GitHub</a>.
+            Official versions of ${PROJECT_NAME} can be found below, as well as on <a href="https://github.com/opencor/${PROJECT_REPOSITORY_NAME}/releases">GitHub</a>.
             If any, the latest snapshot can also be found below while previous snapshots can be found <a href="previousSnapshots.html">here</a>.
         </p>
 

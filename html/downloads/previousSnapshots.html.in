@@ -21,8 +21,8 @@
         </script>
 
         <p>
-            If any, previous snapshots of OpenCOR can be found below.
-            Official versions of OpenCOR and the latest snapshot, if any, can be found <a href="index.html">here</a>.
+            If any, previous snapshots of ${PROJECT_NAME} can be found below.
+            Official versions of ${PROJECT_NAME} and the latest snapshot, if any, can be found <a href="index.html">here</a>.
         </p>
 
         <script type="text/javascript">

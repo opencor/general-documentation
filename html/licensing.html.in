@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            Contact us
+            Licensing
         </title>
 
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -15,16 +15,12 @@
     </head>
     <body ondragstart="return false;" ondrop="return false;">
         <script type="text/javascript">
-            headerAndContentsMenu("Contact us", ".");
+            headerAndContentsMenu("Licensing", ".");
         </script>
 
-        <p/>
-
-        <ul>
-            <li>Mailing lists: <a href="https://groups.google.com/forum/#!forum/opencor-users">users</a> and <a href="https://groups.google.com/forum/#!forum/opencor-developers">developers</a>.</li>
-            <li>Twitter: <a href="https://twitter.com/TeamOpenCOR">TeamOpenCOR</a>.</li>
-            <li>If you have a <a href="https://github.com/">GitHub</a> account, you can report bugs, request a feature or suggest an improvement by clicking <a href="https://github.com/opencor/opencor/issues/new">here</a>.</li>
-        </ul>
+        <p>
+            ${PROJECT_NAME} is released under the ${PROJECT_LICENSE}, a copy of which can be found in the ${PROJECT_NAME} distribution package in <a href="https://raw.githubusercontent.com/opencor/${PROJECT_REPOSITORY_NAME}/master/LICENSE.txt"><code>[${PROJECT_NAME}]/LICENSE.txt</code></a>.
+        </p>
 
         <script type="text/javascript">
             copyright(".");

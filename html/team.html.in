@@ -19,7 +19,7 @@
         </script>
 
         <p>
-            The OpenCOR team consists of the following people:
+            The ${PROJECT_NAME} team consists of the following people:
         </p>
 
         <table class="team">
@@ -33,7 +33,7 @@
                             Project leader
                         </div>
 
-                        <a href="mailto: Peter Hunter <p.hunter@auckland.ac.nz>?subject=About OpenCOR">Peter Hunter</a>
+                        <a href="mailto: Peter Hunter <p.hunter@auckland.ac.nz>?subject=About ${PROJECT_NAME}">Peter Hunter</a>
                     </td>
                 </tr>
                 <tr>
@@ -45,21 +45,9 @@
                             Project manager & Lead developer
                         </div>
 
-                        <a href="mailto: Alan Garny <alan.garny@inria.fr>?subject=About OpenCOR">Alan Garny</a>
+                        <a href="mailto: Alan Garny <alan.garny@inria.fr>?subject=About ${PROJECT_NAME}">Alan Garny</a>
                     </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="res/pics/davidBrooks.jpg" width=60 height=70 alt="David Brooks">
-                    </td>
-                    <td>
-                        <div>
-                            Senior developer
-                        </div>
-
-                        <a href="mailto: David Brooks <d.brooks@auckland.ac.nz>?subject=About OpenCOR">David Brooks</a>
-                    </td>
-                </tr>
+                </tr>${PROJECT_ADDITIONAL_TEAM_MEMBERS}
             </tbody>
         </table>
 
