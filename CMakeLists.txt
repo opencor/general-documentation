@@ -6,14 +6,22 @@ project(GeneralDocumentation
     LANGUAGES NONE
 )
 
-# Copy some files over
+# Build the general documentation(s)
 
-set(HTML_DIR ${CMAKE_SOURCE_DIR}/html)
+include(cmake/common.cmake)
 
-file(GLOB_RECURSE FILES RELATIVE ${HTML_DIR} *.css *.html *.jpg *.js *.php *.png)
+if("${MODE}" STREQUAL "libOpenCOR" OR "${MODE}" STREQUAL "")
+    if("${MODE}" STREQUAL "")
+        set(DOCUMENTATION_DESTINATION libOpenCOR)
+    endif()
 
-foreach(FILE ${FILES})
-    get_filename_component(DESTINATION_DIR ${CMAKE_BINARY_DIR}/html/${FILE} DIRECTORY)
+    build_documentation(libOpenCOR ${DOCUMENTATION_DESTINATION})
+endif()
 
-    file(COPY ${HTML_DIR}/${FILE} DESTINATION ${DESTINATION_DIR})
-endforeach()
+if("${MODE}" STREQUAL "OpenCOR" OR "${MODE}" STREQUAL "")
+    if("${MODE}" STREQUAL "")
+        set(DOCUMENTATION_DESTINATION OpenCOR)
+    endif()
+
+    build_documentation(OpenCOR ${DOCUMENTATION_DESTINATION})
+endif()

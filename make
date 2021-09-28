@@ -18,7 +18,11 @@ else
     cmakeGenerator="Unix Makefiles"
 fi
 
-echo "\033[44;37;1mMaking the general documentation for [lib]OpenCOR (using $generator)...\033[0m"
+if [ "$1" == "" ]; then
+    echo "\033[44;37;1mMaking the general documentation for libOpenCOR and OpenCOR (using $generator)...\033[0m"
+else
+    echo "\033[44;37;1mMaking the general documentation for $mode (using $generator)...\033[0m"
+fi
 
 cd build
 
