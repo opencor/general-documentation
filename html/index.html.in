@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            OpenCOR
+            ${PROJECT_NAME}
         </title>
 
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -19,29 +19,25 @@
 
         <div class="main">
             <p>
-                <a href="https://opencor.ws/">OpenCOR</a> is an <a href="licensing.html">open source</a> <a href="supportedPlatforms.html">cross-platform</a> modelling environment (and a replacement for <a href="cor/index.html">COR</a>).
+                <a href="${PROJECT_URL}">${PROJECT_NAME}</a> is ${PROJECT_DESCRIPTION}.
                 Here are a few links, which you might find useful:
             </p>
 
             <ul>
                 <li><a href="whatIsNew.html">What is new?</a></li>
             </ul>
-
-            <ul>
-                <li><a href="https://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/index.html">OpenCOR tutorial</a></li>
-            </ul>
-
+${PROJECT_TUTORIAL}
             <ul>
                 <li><a href="user/index.html">User documentation</a></li>
                 <li><a href="developer/index.html">Developer documentation</a></li>
             </ul>
 
             <ul>
-                <li><a href="downloads/index.html">Download OpenCOR</a></li>
+                <li><a href="downloads/index.html">Download ${PROJECT_NAME}</a></li>
             </ul>
 
             <ul>
-                <li><a href="team.html">OpenCOR team</a></li>
+                <li><a href="team.html">${PROJECT_NAME} team</a></li>
             </ul>
 
             <p>
@@ -49,7 +45,7 @@
             </p>
 
             <p>
-                Please <a href="contactUs.html">contact us</a> if you have any questions about OpenCOR.
+                Please <a href="contactUs.html">contact us</a> if you have any questions about ${PROJECT_NAME}.
             </p>
         </div>
 
