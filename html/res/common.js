@@ -4,7 +4,7 @@ if (   document.location.protocol !== "file:"
     && document.location.protocol !== "qthelp:"
     && document.location.host !== "localhost"
     && document.location.host !== "127.0.0.1") {
-    let _gaq = _gaq || [];
+    var _gaq = _gaq || [];
 
     _gaq.push(["_setAccount", "UA-39516363-1"]);
     _gaq.push(["_trackPageview"]);
