@@ -41,7 +41,7 @@ if (   document.location.protocol !== "file:"
                     elementEvent.category = "Emails";
                     elementEvent.action = "Click email address";
                     elementEvent.label = elementEvent.label.replace(/^mailto: /, "");
-                } else if (href.match(/\.(exe|zip|tar\.gz|dmg)$/i)) {
+                } else if (href.match(/\.(exe|zip|tar\.gz|dmg|pkg)$/i)) {
                     elementEvent.category = "Downloads";
                     elementEvent.action = "Click download file";
                 } else if (    href.match(/^https?:/i)
