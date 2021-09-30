@@ -1,5 +1,6 @@
 macro(build_documentation PROJECT_NAME)
-    # Copy some files over
+    # Copy some files over, after filtering out COR-related files in the case of
+    # libOpenCOR
 
     set(RELATIVE_DESTINATION_DIR html)
     set(ABSOLUTE_DESTINATION_DIR ${CMAKE_SOURCE_DIR}/${RELATIVE_DESTINATION_DIR})
@@ -14,6 +15,10 @@ macro(build_documentation PROJECT_NAME)
         ${ABSOLUTE_DESTINATION_DIR}/*.php
         ${ABSOLUTE_DESTINATION_DIR}/*.png
     )
+
+    if("${PROJECT_NAME}" STREQUAL "libOpenCOR")
+        list(FILTER FILES EXCLUDE REGEX "^cor/")
+    endif()
 
     foreach(FILE ${FILES})
         get_filename_component(DESTINATION_DIR ${CMAKE_BINARY_DIR}/${RELATIVE_DESTINATION_DIR}/${ARGN}/${FILE} DIRECTORY)
