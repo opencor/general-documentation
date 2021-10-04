@@ -38,7 +38,8 @@ var jsonData = { "versions": [
                      ],
                      "changes": [
                       { "change": "<strong>CellML tools:</strong> suggest a better file name when exporting a remote <a href=\"https://cellml.org/\">CellML</a> 1.1 file to <a href=\"https://cellml.org/\">CellML</a> 1.0 (see issue <a href=\"https://github.com/opencor/opencor/issues/2579\">#2579</a>). Fixed an id-related issue when exporting a <a href=\"https://cellml.org/\">CellML</a> 1.1 file to <a href=\"https://cellml.org/\">CellML</a> 1.0 (see issue <a href=\"https://github.com/opencor/opencor/issues/2581\">#2581</a>)." },
-                      { "change": "<strong>CellML Text view:</strong> fixed some id-related issues when converting a <a href=\"https://cellml.org/\">CellML</a> file to the <a href=\"https://opencor.ws/user/plugins/editing/cellmlTextView.html#plugins-editing-cellmltextview-cellmltextformat\">CellML Text format</a> (see issue <a href=\"https://github.com/opencor/opencor/issues/575\">#575</a>)." }
+                      { "change": "<strong>CellML Text view:</strong> fixed some id-related issues when converting a <a href=\"https://cellml.org/\">CellML</a> file to the <a href=\"https://opencor.ws/user/plugins/editing/cellmlTextView.html#plugins-editing-cellmltextview-cellmltextformat\">CellML Text format</a> (see issue <a href=\"https://github.com/opencor/opencor/issues/575\">#575</a>)." },
+                      { "change": "<strong>Third-party libraries:</strong> upgraded <a href=\"https://katex.org/\">KaTeX</a> to version 0.13.18 (see issue <a href=\"https://github.com/opencor/opencor/issues/2583\">#2583</a>)." }
                      ]
                    },
                    { "major": 0, "minor": 5, "patch": 0, "day": 15, "month": 10, "year": 2016, "type": 0, "license": 1,
