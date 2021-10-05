@@ -26,7 +26,7 @@ fi
 
 cd build
 
-cmake -G "$cmakeGenerator" -DMODE=$mode ..
+cmake -G "$cmakeGenerator" -DMODE=$mode -DENABLE_DOWNLOADS=ON ..
 
 exitCode=$?
 

@@ -40,7 +40,7 @@ IF DEFINED NinjaFound (
     SET CMakeGenerator=NMake Makefiles
 )
 
-cmake -G "!CMakeGenerator!" -DMODE=!Mode! ..
+cmake -G "!CMakeGenerator!" -DMODE=!Mode! -DENABLE_DOWNLOADS=ON ..
 
 SET ExitCode=!ERRORLEVEL!
 

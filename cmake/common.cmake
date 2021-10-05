@@ -72,20 +72,47 @@ macro(build_documentation PROJECT_NAME)
         )
     endif()
 
-    foreach(CONFIGURED_FILE downloads/index.html
-                            downloads/previousSnapshots.html
-                            res/menu.js
+    if(ENABLE_DOWNLOADS)
+        set(ADDITIONAL_CONFIGURED_FILES
+            downloads/index.html
+            downloads/previousSnapshots.html
+        )
+
+        list(APPEND ADDITIONAL_COPIED_FILES
+            downloads/index.js
+            downloads/previousSnapshots.js
+        )
+    else()
+        if("${PROJECT_NAME}" STREQUAL "libOpenCOR")
+            set(DOWNLOADS_DIR libopencor/downloads)
+        else()
+            set(DOWNLOADS_DIR downloads)
+        endif()
+
+        set(DOWNLOADS_TITLE "Downloads")
+        set(DOWNLOADS_PAGE index.html)
+        set(DOWNLOADS_WHAT "Official versions of ${PROJECT_NAME} and the latest snapshot, if any,")
+
+        configure_file(${ABSOLUTE_DESTINATION_DIR}/downloads/disabled.html.in ${CMAKE_BINARY_DIR}/${RELATIVE_DESTINATION_DIR}/${ARGN}/downloads/index.html)
+
+        set(DOWNLOADS_TITLE "Previous snapshots")
+        set(DOWNLOADS_PAGE previousSnapshots.html)
+        set(DOWNLOADS_WHAT "Previous snapshots of ${PROJECT_NAME}")
+
+        configure_file(${ABSOLUTE_DESTINATION_DIR}/downloads/disabled.html.in ${CMAKE_BINARY_DIR}/${RELATIVE_DESTINATION_DIR}/${ARGN}/downloads/previousSnapshots.html)
+    endif()
+
+    foreach(CONFIGURED_FILE res/menu.js
                             contactUs.html
                             index.html
                             licensing.html
                             supportedPlatforms.html
-                            team.html)
+                            team.html
+                            ${ADDITIONAL_CONFIGURED_FILES})
         configure_file(${ABSOLUTE_DESTINATION_DIR}/${CONFIGURED_FILE}.in ${CMAKE_BINARY_DIR}/${RELATIVE_DESTINATION_DIR}/${ARGN}/${CONFIGURED_FILE})
     endforeach()
 
-    foreach(COPIED_FILE downloads/index.js
-                        downloads/previousSnapshots.js
-                        res/pics/logo.png
+    foreach(COPIED_FILE res/pics/logo.png
                         supportedPlatforms.js
                         whatIsNew.js
                         ${ADDITIONAL_COPIED_FILES})
