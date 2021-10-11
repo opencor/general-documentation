@@ -28,6 +28,7 @@
             </ul>
 ${PROJECT_TUTORIAL_LISTING_ENTRY}
             <ul>
+${PROJECT_API_DOCUMENTATION_LISTING_ENTRY}
                 <li><a href="user/index.html">User documentation</a></li>
                 <li><a href="developer/index.html">Developer documentation</a></li>
             </ul>

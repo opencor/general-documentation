@@ -38,6 +38,8 @@ macro(build_documentation PROJECT_NAME)
         set(PROJECT_DESCRIPTION "the backend library to <a href=\"https://opencor.ws/\">OpenCOR</a>, an <a href=\"licensing.html\">open source</a> <a href=\"supportedPlatforms.html\">cross-platform</a> modelling environment")
         set(PROJECT_LICENSE "<a href=\"https://opensource.org/licenses/Apache-2.0\">Apache v2.0 license</a>")
         set(PROJECT_TUTORIAL_LISTING_ENTRY)
+        set(PROJECT_API_DOCUMENTATION_LISTING_ENTRY "                <li><a href=\"api/index.html\">API documentation</a></li>
+")
         set(PROJECT_TUTORIAL_MENU_ENTRY)
 
         set(ADDITIONAL_COPIED_FILES)
@@ -63,6 +65,7 @@ macro(build_documentation PROJECT_NAME)
                 <li><a href=\"https://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/index.html\">OpenCOR tutorial</a></li>
             </ul>
 ")
+        set(PROJECT_API_DOCUMENTATION_LISTING_ENTRY)
         set(PROJECT_TUTORIAL_MENU_ENTRY "
                                 { \"separator\": true },
                                 { \"level\": 0, \"label\": \"OpenCOR tutorial\", \"link\": \"https://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/index.html\", \"directLink\": true },")
