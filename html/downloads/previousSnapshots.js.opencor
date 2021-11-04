@@ -1,4 +1,28 @@
 var jsonData = { "versions": [
+                   { "major": 0, "minor": 0, "patch": 0, "day": 5, "month": 10, "year": 2021, "type": 2, "license": 2,
+                     "platforms": [
+                       { "name": "Windows", "supported": "Windows 10",
+                         "files": [
+                           { "extension": ".exe" }, { "extension": ".zip" }
+                         ]
+                       },
+                       { "name": "Linux", "supported": "Ubuntu 20.04 LTS (Focal Fossa) and later",
+                         "files": [
+                           { "extension": ".tar.gz" }
+                         ]
+                       },
+                       { "name": "macOS", "supported": "macOS 10.12 (Sierra) and later",
+                         "files": [
+                           { "extension": ".pkg" }, { "extension": ".zip" }
+                         ]
+                       }
+                     ],
+                     "changes": [
+                      { "change": "<strong>CellML tools:</strong> suggest a better file name when exporting a remote <a href=\"https://cellml.org/\">CellML</a> 1.1 file to <a href=\"https://cellml.org/\">CellML</a> 1.0 (see issue <a href=\"https://github.com/opencor/opencor/issues/2579\">#2579</a>). Fixed an id-related issue when exporting a <a href=\"https://cellml.org/\">CellML</a> 1.1 file to <a href=\"https://cellml.org/\">CellML</a> 1.0 (see issue <a href=\"https://github.com/opencor/opencor/issues/2581\">#2581</a>)." },
+                      { "change": "<strong>CellML Text view:</strong> fixed some id-related issues when converting a <a href=\"https://cellml.org/\">CellML</a> file to the <a href=\"https://opencor.ws/user/plugins/editing/cellmlTextView.html#plugins-editing-cellmltextview-cellmltextformat\">CellML Text format</a> (see issue <a href=\"https://github.com/opencor/opencor/issues/2581\">#2581</a>)." },
+                      { "change": "<strong>Third-party libraries:</strong> upgraded <a href=\"https://katex.org/\">KaTeX</a> to version 0.13.18 (see issue <a href=\"https://github.com/opencor/opencor/issues/2583\">#2583</a>). Upgraded <a href=\"https://libgit2.github.com/\">libgit2</a> to version 1.3.0 (see issue <a href=\"https://github.com/opencor/opencor/issues/2584\">#2584</a>). Upgraded <a href=\"https://mesa3d.org/\">Mesa</a> to version 21.2.3 (see issue <a href=\"https://github.com/opencor/opencor/issues/2585\">#2585</a>). Upgraded <a href=\"https://computation.llnl.gov/projects/sundials\">SUNDIALS</a> to version 5.8.0 (see issue <a href=\"https://github.com/opencor/opencor/issues/2586\">#2586</a>). Upgraded <a href=\"https://packages.ubuntu.com/impish/oxygen-icon-theme\">Oxygen</a> to version 5.86.0 (see issue <a href=\"https://github.com/opencor/opencor/issues/2588\">#2588</a>)." }
+                     ]
+                   },
                    { "major": 0, "minor": 0, "patch": 0, "day": 23, "month": 9, "year": 2021, "type": 2, "license": 2,
                      "platforms": [
                        { "name": "Windows", "supported": "Windows 10",
@@ -462,7 +486,7 @@ var jsonData = { "versions": [
                      "changes": [
                        { "change": "<strong>General:</strong> fixed an issue with <a href=\"https://qt.io/\">Qt</a> not being able to find its platform plugin anymore (see issue <a href=\"https://github.com/opencor/opencor/issues/2089\">#2089</a>)." },
                        { "change": "<strong>Simulation support:</strong> allow a remote <a href=\"https://sed-ml.github.io/\">SED-ML</a> file to be run headless (see issue <a href=\"https://github.com/opencor/opencor/issues/2085\">#2085</a>)." },
-                       { "change": "<strong>Help window:</strong> fixed and issue with a blank page being shown rather than the documentation itself (see issue <a href=\"https://github.com/opencor/opencor/issues/2099\">#2099</a>)." },
+                       { "change": "<strong>Help window:</strong> fixed an issue with a blank page being shown rather than the documentation itself (see issue <a href=\"https://github.com/opencor/opencor/issues/2099\">#2099</a>)." },
                        { "change": "<strong>Third-party libraries:</strong> fixed an issue with <a href=\"https://libgit2.github.com/\">libgit2</a> referencing two different copies of <a href=\"https://zlib.net/\">zlib</a> (see issue <a href=\"https://github.com/opencor/opencor/issues/2088\">#2088</a>)." }
                      ]
                    },
