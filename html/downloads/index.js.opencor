@@ -38,6 +38,7 @@ var jsonData = { "versions": [
                      ],
                      "changes": [
                        { "change": "<strong>General:</strong> rely on the developer's <a href=\"https://www.sphinx-doc.org/\">Sphinx</a> and its extensions to build the documentation (see issue <a href=\"https://github.com/opencor/opencor/issues/2593\">#2593</a>)." },
+                      { "change": "<strong>Raw CellML view:</strong> don't show HTML code in messages (see issue <a href=\"https://github.com/opencor/opencor/issues/2595\">#2595</a>)." }
                      ]
                    },
                    { "major": 0, "minor": 5, "patch": 0, "day": 15, "month": 10, "year": 2016, "type": 0, "license": 1,
