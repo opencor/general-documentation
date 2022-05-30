@@ -18,7 +18,7 @@ jobs:
       - name: Install CMake and Ninja
         uses: lukka/get-cmake@latest
       - name: Install packages
-        run: sudo apt install python3-sphinx
+        run: sudo apt install Sphinx sphinx_copybutton sphinx_inline_tabs
       - name: Generate OpenCOR's documentation
         run: ./cd
       - name: Deploy OpenCOR's documentation
