@@ -17,8 +17,8 @@ jobs:
           repository: opencor/opencor
       - name: Install CMake and Ninja
         uses: lukka/get-cmake@latest
-      - name: Install packages
-        run: sudo apt install Sphinx sphinx_copybutton sphinx_inline_tabs
+      - name: Install Sphinx
+        run: pip3 install Sphinx sphinx_copybutton sphinx_inline_tabs
       - name: Generate OpenCOR's documentation
         run: ./cd
       - name: Deploy OpenCOR's documentation
