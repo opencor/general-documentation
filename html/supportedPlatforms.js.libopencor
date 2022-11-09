@@ -1,7 +1,7 @@
 var jsonData = { "oses": [
                    { "name": "Windows",
                      "entries": [
-                       { "description": "<strong>Snapshots:</strong> supported on the 64-bit version of <a href=\"https://en.wikipedia.org/wiki/Windows_10\">Windows 10</a>." }
+                       { "description": "<strong>Snapshots:</strong> supported on the 64-bit version of <a href=\"https://en.wikipedia.org/wiki/Windows_10\">Windows 10</a> and later." }
                      ]
                    },
                    { "name": "Linux",
