@@ -11,7 +11,7 @@ var jsonData = { "oses": [
                    },
                    { "name": "macOS",
                      "entries": [
-                       { "description": "<strong>Snapshots:</strong> supported on <a href=\"https://en.wikipedia.org/wiki/MacOS_Mojave\">macOS 10.14 (Mojave)</a> and later." }
+                       { "description": "<strong>Snapshots:</strong> supported on <a href=\"https://en.wikipedia.org/wiki/MacOS_Big_Sur\">macOS 11 (Big Sur)</a> and later." }
                      ]
                    }
                  ]
