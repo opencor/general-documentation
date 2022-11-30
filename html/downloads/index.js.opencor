@@ -18,7 +18,7 @@ var jsonData = { "versions": [
                        }
                      ]
                    },
-                   { "major": 0, "minor": 0, "patch": 0, "day": 31, "month": 5, "year": 2022, "type": 2, "license": 2,
+                   { "major": 0, "minor": 0, "patch": 0, "day": 30, "month": 11, "year": 2022, "type": 2, "license": 2,
                      "platforms": [
                        { "name": "Windows", "supported": "Windows 10",
                          "files": [
