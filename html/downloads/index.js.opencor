@@ -1,5 +1,24 @@
 var jsonData = { "versions": [
-                   { "major": 0, "minor": 6, "patch": 0, "day": 11, "month": 12, "year": 2018, "type": 1, "license": 2,
+                   { "major": 0, "minor": 7, "patch": 0, "day": 15, "month": 12, "year": 2022, "type": 1, "license": 2,
+                     "platforms": [
+                       { "name": "Windows", "supported": "Windows 10 and later",
+                         "files": [
+                           { "extension": ".exe" }, { "extension": ".zip" }
+                         ]
+                       },
+                       { "name": "Linux", "supported": "Ubuntu 20.04 LTS (Focal Fossa) and later",
+                         "files": [
+                           { "extension": ".tar.gz" }
+                         ]
+                       },
+                       { "name": "macOS", "supported": "macOS 11 (Big Sur) and later",
+                         "files": [
+                           { "extension": ".pkg" }, { "extension": ".zip" }
+                         ]
+                       }
+                     ]
+                   },
+                   { "major": 0, "minor": 6, "patch": 0, "day": 11, "month": 12, "year": 2018, "type": 0, "license": 2,
                      "platforms": [
                        { "name": "Windows", "supported": "Windows 7 and later",
                          "files": [
@@ -16,30 +35,6 @@ var jsonData = { "versions": [
                            { "extension": ".dmg" }, { "extension": ".zip" }
                          ]
                        }
-                     ]
-                   },
-                   { "major": 0, "minor": 0, "patch": 0, "day": 30, "month": 11, "year": 2022, "type": 2, "license": 2,
-                     "platforms": [
-                       { "name": "Windows", "supported": "Windows 10",
-                         "files": [
-                           { "extension": ".exe" }, { "extension": ".zip" }
-                         ]
-                       },
-                       { "name": "Linux", "supported": "Ubuntu 20.04 LTS (Focal Fossa) and later",
-                         "files": [
-                           { "extension": ".tar.gz" }
-                         ]
-                       },
-                       { "name": "macOS", "supported": "macOS 10.12 (Sierra) and later",
-                         "files": [
-                           { "extension": ".pkg" }, { "extension": ".zip" }
-                         ]
-                       }
-                     ],
-                     "changes": [
-                       { "change": "<strong>General:</strong> prevent OpenCOR from crashing when changing its style (see issue <a href=\"https://github.com/opencor/opencor/issues/2709\">#2709</a>)." },
-                       { "change": "<strong>CellML support:</strong> improved error messages when fully instantiating a model with imports (see issue <a href=\"https://github.com/opencor/opencor/issues/2680\">#2680</a>)." },
-                       { "change": "<strong>Third-party libraries:</strong> upgraded <a href=\"https://openssl.org/\">OpenSSL</a> to version 1.1.1s (see issue <a href=\"https://github.com/opencor/opencor/issues/2674\">#2674</a>). Upgraded <a href=\"https://computation.llnl.gov/projects/sundials\">SUNDIALS</a> to version 6.4.1 (see issue <a href=\"https://github.com/opencor/opencor/issues/2683\">#2683</a>). Upgraded <a href=\"https://llvm.org/\">LLVM</a>+<a href=\"https://clang.llvm.org/\">Clang</a> to version 14.0.6 (see issue <a href=\"https://github.com/opencor/opencor/issues/2692\">#2692</a>). Upgraded <a href=\"https://libgit2.github.com/\">libgit2</a> to version 1.5.0 (see issue <a href=\"https://github.com/opencor/opencor/issues/2694\">#2694</a>). Upgraded <a href=\"https://github.com/fbergmann/libSEDML/\">libSEDML</a> to version 2.0.32 (see issue <a href=\"https://github.com/opencor/opencor/issues/2695\">#2695</a>). Upgraded <a href=\"https://zlib.net/\">zlib</a> to version 1.2.13 (see issue <a href=\"https://github.com/opencor/opencor/issues/2697\">#2697</a>). Upgraded <a href=\"https://mesa3d.org/\">Mesa</a> to version 22.2.2 (see issue <a href=\"https://github.com/opencor/opencor/issues/2698\">#2698</a>)." }
                      ]
                    },
                    { "major": 0, "minor": 5, "patch": 0, "day": 15, "month": 10, "year": 2016, "type": 0, "license": 1,
