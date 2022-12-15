@@ -40,6 +40,7 @@ macro(build_documentation PROJECT_NAME)
         set(PROJECT_TUTORIAL_LISTING_ENTRY)
         set(PROJECT_API_DOCUMENTATION_LISTING_ENTRY "                <li><a href=\"api/index.html\">API documentation</a></li>
 ")
+        set(PROJECT_MAILING_LIST_AND_PAPER)
         set(PROJECT_TUTORIAL_MENU_ENTRY)
 
         set(ADDITIONAL_COPIED_FILES)
@@ -66,6 +67,11 @@ macro(build_documentation PROJECT_NAME)
             </ul>
 ")
         set(PROJECT_API_DOCUMENTATION_LISTING_ENTRY)
+        set(PROJECT_MAILING_LIST_AND_PAPER "
+        <p>
+            You might also be interested in our <a href=\"https://groups.google.com/forum/#!forum/opencor-users\">users</a> and/or <a href=\"https://groups.google.com/forum/#!forum/opencor-developers\">developers</a> mailing lists, as well as in our <a href=\"https://dx.doi.org/10.3389/fphys.2015.00026\">published article</a>.
+        </p>
+")
         set(PROJECT_TUTORIAL_MENU_ENTRY "
                                 { \"separator\": true },
                                 { \"level\": 0, \"label\": \"OpenCOR tutorial\", \"link\": \"https://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/index.html\", \"directLink\": true },")
