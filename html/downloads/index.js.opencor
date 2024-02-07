@@ -18,6 +18,28 @@ var jsonData = { "versions": [
                        }
                      ]
                    },
+                   { "major": 0, "minor": 0, "patch": 0, "day": 7, "month": 2, "year": 2024, "type": 2, "license": 2,
+                     "platforms": [
+                       { "name": "Windows", "supported": "Windows 10 and later",
+                         "files": [
+                           { "extension": ".exe" }, { "extension": ".zip" }
+                         ]
+                       },
+                       { "name": "Linux", "supported": "Ubuntu 20.04 LTS (Focal Fossa) and later",
+                         "files": [
+                           { "extension": ".tar.gz" }
+                         ]
+                       },
+                       { "name": "macOS", "supported": "macOS 11 (Big Sur) and later",
+                         "files": [
+                           { "extension": ".pkg" }, { "extension": ".zip" }
+                         ]
+                       }
+                     ],
+                     "changes": [
+                       { "change": "<strong>SED-ML support:</strong> fixed some issues with a remote CellML file used by a remote SED-ML file (see issue <a href=\"https://github.com/opencor/opencor/issues/2743\">#2743</a>)." }
+                     ]
+                   },
                    { "major": 0, "minor": 7, "patch": 0, "day": 15, "month": 12, "year": 2022, "type": 0, "license": 2,
                      "platforms": [
                        { "name": "Windows", "supported": "Windows 10 and later",
