@@ -1,4 +1,26 @@
 var jsonData = { "versions": [
+                   { "anchor": "latest", "description": "Latest snapshot", "day": 7, "month": 2, "year": 2024,
+                     "categories": [
+                       { "name": "Editing",
+                         "entries": [
+                           { "type": "subCategory", "name": "CellML Text view",
+                             "entries": [
+                               { "type": "improved", "description": "Align equations against the equal sign." }
+                             ]
+                           }
+                         ]
+                       },
+                       { "name": "Support",
+                         "entries": [
+                           { "type": "subCategory", "name": "<a href=\"https://sed-ml.github.io/\">SED-ML</a> support",
+                             "entries": [
+                               { "type": "fixed", "description": "Some issues with a remote CellML file used by a remote SED-ML file." }
+                             ]
+                           }
+                         ]
+                       }
+                     ]
+                   },
                    { "anchor": "0.7.1", "description": "Version 0.7.1", "day": 7, "month": 2, "year": 2023,
                      "categories": [
                        { "name": "General",
