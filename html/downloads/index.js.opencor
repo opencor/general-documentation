@@ -38,6 +38,7 @@ var jsonData = { "versions": [
                      ],
                      "changes": [
                        { "change": "<strong>CellML Text view:</strong> now align equations against the equal sign (see issue <a href=\"https://github.com/opencor/opencor/issues/2737\">#2737</a>)." },
+                       { "change": "<strong>Graph Panel widget:</strong> can, once again, enable/disable some properties from the context menu (see issue <a href=\"https://github.com/opencor/opencor/issues/2758\">#2758</a>)." },
                        { "change": "<strong>SED-ML support:</strong> fixed some issues with a remote CellML file used by a remote SED-ML file (see issue <a href=\"https://github.com/opencor/opencor/issues/2743\">#2743</a>)." }
                      ]
                    },
