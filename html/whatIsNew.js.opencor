@@ -23,7 +23,7 @@ var jsonData = { "versions": [
                          "entries": [
                            { "type": "subCategory", "name": "Simulation Experiment view",
                              "entries": [
-                               { "type": "improved", "description": "Synchronisation of axes." },
+                               { "type": "improved", "description": "Rendering of the GUI." },
                                { "type": "fixed", "description": "Issue with enabling/disabling some properties in a graph panel plot." }
                              ]
                            }
