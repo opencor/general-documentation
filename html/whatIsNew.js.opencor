@@ -1,5 +1,5 @@
 var jsonData = { "versions": [
-                   { "anchor": "latest", "description": "Latest snapshot", "day": 7, "month": 2, "year": 2024,
+                   { "anchor": "latest", "description": "Latest snapshot", "day": 10, "month": 4, "year": 2024,
                      "categories": [
                        { "name": "Editing",
                          "entries": [
@@ -12,6 +12,11 @@ var jsonData = { "versions": [
                        },
                        { "name": "Support",
                          "entries": [
+                           { "type": "subCategory", "name": "<a href=\"https://www.python.org/\">Python</a> support",
+                             "entries": [
+                               { "type": "improved", "description": "Upgraded to Python 3.12.2." }
+                             ]
+                           },
                            { "type": "subCategory", "name": "<a href=\"https://sed-ml.github.io/\">SED-ML</a> support",
                              "entries": [
                                { "type": "fixed", "description": "Some issues with a remote CellML file used by a remote SED-ML file." }
