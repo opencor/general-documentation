@@ -40,7 +40,8 @@ var jsonData = { "versions": [
                        { "change": "<strong>CellML Text view:</strong> now align equations against the equal sign (see issue <a href=\"https://github.com/opencor/opencor/issues/2737\">#2737</a>)." },
                        { "change": "<strong>Graph Panel widget:</strong> now synchronise axes of the same type (see issue <a href=\"https://github.com/opencor/opencor/issues/2746\">#2746  </a>). Can, once again, enable/disable some properties from the context menu (see issue <a href=\"https://github.com/opencor/opencor/issues/2758\">#2758</a>). Fixed an issue with the range of some plots' axes not getting set properly (see issue <a href=\"https://github.com/opencor/opencor/issues/2761\">#2761</a>)." },
                        { "change": "<strong>Python support:</strong> upgraded to version 3.12.2 (see issue <a href=\"https://github.com/opencor/opencor/issues/2745\">#2745</a>)." },
-                       { "change": "<strong>SED-ML support:</strong> fixed some issues with a remote CellML file used by a remote SED-ML file (see issue <a href=\"https://github.com/opencor/opencor/issues/2743\">#2743</a>)." }
+                       { "change": "<strong>SED-ML support:</strong> fixed some issues with a remote CellML file used by a remote SED-ML file (see issue <a href=\"https://github.com/opencor/opencor/issues/2743\">#2743</a>)." },
+                       { "change": "<strong>CVODE solver:</strong> improved the computation of rates (see issue <a href=\"https://github.com/opencor/opencor/issues/2784\">#2784</a>)." }
                      ]
                    },
                    { "major": 0, "minor": 7, "patch": 0, "day": 15, "month": 12, "year": 2022, "type": 0, "license": 2,
