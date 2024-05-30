@@ -37,6 +37,7 @@ var jsonData = { "versions": [
                        }
                      ],
                      "changes": [
+                       { "change": "<strong>CSV data store:</strong> export data with more precision (see issue <a href=\"https://github.com/opencor/opencor/issues/2791\">#2791</a>)." },
                        { "change": "<strong>CellML Text view:</strong> now align equations against the equal sign (see issue <a href=\"https://github.com/opencor/opencor/issues/2737\">#2737</a>)." },
                        { "change": "<strong>Graph Panel widget:</strong> now synchronise axes of the same type (see issue <a href=\"https://github.com/opencor/opencor/issues/2746\">#2746  </a>). Can, once again, enable/disable some properties from the context menu (see issue <a href=\"https://github.com/opencor/opencor/issues/2758\">#2758</a>). Fixed an issue with the range of some plots' axes not getting set properly (see issue <a href=\"https://github.com/opencor/opencor/issues/2761\">#2761</a>)." },
                        { "change": "<strong>Python support:</strong> upgraded to version 3.12.2 (see issue <a href=\"https://github.com/opencor/opencor/issues/2745\">#2745</a>)." },
