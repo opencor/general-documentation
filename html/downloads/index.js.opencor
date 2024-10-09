@@ -37,7 +37,7 @@ var jsonData = { "versions": [
                        }
                      ],
                      "changes": [
-                       { "change": "<strong>Python support:</strong> fixed an issue with not being able to install <a href=\"https://python.org/\">Python</a> modules by adding two new dedicated scripts: one to start a <a href=\"https://python.org/\">Python</a> session and another to run the <a href=\"https://pip.pypa.io/en/stable/cli/\">pip</a> command (see issue <a href=\"https://github.com/opencor/opencor/issues/2800\">#2800</a>). Added a way to release all the values (retrieved as <a href=\"https://numpy.org/doc/stable/reference/generated/numpy.array.html\">NumPy arrays</a>) that are not needed anymore (see issue <a href=\"https://github.com/opencor/opencor/issues/2801\">#2801</a>)." }
+                       { "change": "<strong>Python support:</strong> fixed an issue with our <a href=\"https://opencor.ws/user/userInterfaces/commandLineInterfacePythonRelatedScripts.html\">Python-related scripts</a> not working on <a href=\"https://en.wikipedia.org/wiki/Microsoft_Windows\">Windows</a> (see issue <a href=\"https://github.com/opencor/opencor/issues/2811\">#2811</a>)." }
                      ]
                    },
                    { "major": 0, "minor": 7, "patch": 0, "day": 15, "month": 12, "year": 2022, "type": 0, "license": 2,

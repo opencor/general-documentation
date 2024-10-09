@@ -1,4 +1,26 @@
 var jsonData = { "versions": [
+                   { "major": 0, "minor": 0, "patch": 0, "day": 23, "month": 8, "year": 2024, "type": 2, "license": 2,
+                     "platforms": [
+                       { "name": "Windows", "supported": "Windows 10 and later",
+                         "files": [
+                           { "extension": ".exe" }, { "extension": ".zip" }
+                         ]
+                       },
+                       { "name": "Linux", "supported": "Ubuntu 20.04 LTS (Focal Fossa) and later",
+                         "files": [
+                           { "extension": ".tar.gz" }
+                         ]
+                       },
+                       { "name": "macOS", "supported": "macOS 11 (Big Sur) and later",
+                         "files": [
+                           { "extension": ".pkg" }, { "extension": ".zip" }
+                         ]
+                       }
+                     ],
+                     "changes": [
+                       { "change": "<strong>Python support:</strong> fixed an issue with not being able to install <a href=\"https://python.org/\">Python</a> modules by adding two new dedicated scripts: one to start a <a href=\"https://python.org/\">Python</a> session and another to run the <a href=\"https://pip.pypa.io/en/stable/cli/\">pip</a> command (see issue <a href=\"https://github.com/opencor/opencor/issues/2800\">#2800</a>). Added a way to release all the values (retrieved as <a href=\"https://numpy.org/doc/stable/reference/generated/numpy.array.html\">NumPy arrays</a>) that are not needed anymore (see issue <a href=\"https://github.com/opencor/opencor/issues/2801\">#2801</a>)." }
+                     ]
+                   },
                    { "major": 0, "minor": 0, "patch": 0, "day": 1, "month": 8, "year": 2024, "type": 2, "license": 2,
                      "platforms": [
                        { "name": "Windows", "supported": "Windows 10 and later",
