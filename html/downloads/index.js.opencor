@@ -37,7 +37,7 @@ var jsonData = { "versions": [
                        }
                      ],
                      "changes": [
-                       { "change": "<strong>Python support:</strong> fixed an issue with our <a href=\"https://opencor.ws/user/userInterfaces/commandLineInterfacePythonRelatedScripts.html\">Python-related scripts</a> not working on <a href=\"https://en.wikipedia.org/wiki/Microsoft_Windows\">Windows</a> (see issue <a href=\"https://github.com/opencor/opencor/issues/2811\">#2811</a>)." }
+                       { "change": "<strong>General:</strong> fixed an issue with the splash screen blocking screen real estate during OpenCOR boot up (see issue <a href=\"https://github.com/opencor/opencor/issues/2816\">#2816</a>)." }
                      ]
                    },
                    { "major": 0, "minor": 7, "patch": 0, "day": 15, "month": 12, "year": 2022, "type": 0, "license": 2,

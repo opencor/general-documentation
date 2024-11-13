@@ -1,6 +1,11 @@
 var jsonData = { "versions": [
                    { "anchor": "latest", "description": "Latest snapshot", "day": 10, "month": 10, "year": 2024,
                      "categories": [
+                       { "name": "General",
+                         "entries": [
+                           { "type": "improved", "description": "Splash screen behaviour." }
+                         ]
+                       },
                        { "name": "Data store",
                          "entries": [
                            { "type": "subCategory", "name": "<a href=\"https://en.wikipedia.org/wiki/Comma-separated_values\">CSV</a> data store",
