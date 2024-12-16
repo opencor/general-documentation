@@ -38,7 +38,7 @@ var jsonData = { "versions": [
                      ],
                      "changes": [
                        { "change": "<strong>General:</strong> fixed an issue with the splash screen blocking screen real estate during OpenCOR boot up (see issue <a href=\"https://github.com/opencor/opencor/issues/2816\">#2816</a>)." },
-                       { "change": "<strong>Graph Panel widget:</strong> addressed various user experience related issues (see issue <a href=\"https://github.com/opencor/opencor/issues/2815\">#2815</a>)." },
+                       { "change": "<strong>Graph Panel widget:</strong> addressed various user experience related issues (see issue <a href=\"https://github.com/opencor/opencor/issues/2815\">#2815</a>)." }
                      ]
                    },
                    { "major": 0, "minor": 7, "patch": 0, "day": 15, "month": 12, "year": 2022, "type": 0, "license": 2,
