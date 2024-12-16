@@ -1,5 +1,5 @@
 var jsonData = { "versions": [
-                   { "major": 0, "minor": 7, "patch": 1, "day": 7, "month": 2, "year": 2023, "type": 1, "license": 2,
+                   { "major": 0, "minor": 8, "patch": 0, "day": 17, "month": 12, "year": 2024, "type": 1, "license": 2,
                      "platforms": [
                        { "name": "Windows", "supported": "Windows 10 and later",
                          "files": [
@@ -18,7 +18,7 @@ var jsonData = { "versions": [
                        }
                      ]
                    },
-                   { "major": 0, "minor": 0, "patch": 0, "day": 29, "month": 11, "year": 2024, "type": 2, "license": 2,
+                   { "major": 0, "minor": 7, "patch": 1, "day": 7, "month": 2, "year": 2023, "type": 0, "license": 2,
                      "platforms": [
                        { "name": "Windows", "supported": "Windows 10 and later",
                          "files": [
@@ -35,10 +35,6 @@ var jsonData = { "versions": [
                            { "extension": ".pkg" }, { "extension": ".zip" }
                          ]
                        }
-                     ],
-                     "changes": [
-                       { "change": "<strong>General:</strong> fixed an issue with the splash screen blocking screen real estate during OpenCOR boot up (see issue <a href=\"https://github.com/opencor/opencor/issues/2816\">#2816</a>)." },
-                       { "change": "<strong>Graph Panel widget:</strong> addressed various user experience related issues (see issue <a href=\"https://github.com/opencor/opencor/issues/2815\">#2815</a>)." }
                      ]
                    },
                    { "major": 0, "minor": 7, "patch": 0, "day": 15, "month": 12, "year": 2022, "type": 0, "license": 2,

@@ -1,9 +1,10 @@
 var jsonData = { "versions": [
-                   { "anchor": "latest", "description": "Latest snapshot", "day": 29, "month": 11, "year": 2024,
+                   { "anchor": "0.8.0", "description": "Version 0.8", "day": 17, "month": 12, "year": 2024,
                      "categories": [
                        { "name": "General",
                          "entries": [
-                           { "type": "improved", "description": "Splash screen behaviour." }
+                           { "type": "improved", "description": "Splash screen behaviour." },
+                           { "type": "added", "description": "Code signing on Windows." }
                          ]
                        },
                        { "name": "Data store",
