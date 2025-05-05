@@ -1,11 +1,25 @@
 var jsonData = { "versions": [
+                   { "anchor": "0.8.2", "description": "Version 0.8.2", "day": 5, "month": 5, "year": 2025,
+                     "categories": [
+                       { "name": "Simulation",
+                         "entries": [
+                           { "type": "subCategory", "name": "Simulation Experiment view",
+                             "entries": [
+                               { "type": "improved", "description": "User experience." },
+                               { "type": "fixed", "description": "An issue with clearing simulation results." }
+                             ]
+                           }
+                         ]
+                       }
+                     ]
+                   },
                    { "anchor": "0.8.1", "description": "Version 0.8.1", "day": 23, "month": 1, "year": 2025,
                      "categories": [
                        { "name": "Simulation",
                          "entries": [
                            { "type": "subCategory", "name": "Simulation Experiment view",
                              "entries": [
-                               { "type": "fixed", "description": "Hanging up issue in some cases." }
+                               { "type": "fixed", "description": "A hanging up issue in some cases." }
                              ]
                            }
                          ]
