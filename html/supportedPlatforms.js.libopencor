@@ -1,17 +1,17 @@
 var jsonData = { "oses": [
                    { "name": "Windows",
                      "entries": [
-                       { "description": "<strong>Snapshots:</strong> supported on the 64-bit version of <a href=\"https://en.wikipedia.org/wiki/Windows_10\">Windows 10</a> and later." }
+                       { "description": "<strong>Snapshots:</strong> supported on <a href=\"https://en.wikipedia.org/wiki/Windows_11\">Windows 11</a> and later." }
                      ]
                    },
                    { "name": "Linux",
                      "entries": [
-                       { "description": "<strong>Snapshots:</strong> supported on the 64-bit version of <a href=\"https://en.wikipedia.org/wiki/Ubuntu_version_history#Ubuntu_20.04_LTS_(Focal_Fossa)\">Ubuntu 20.04 LTS (Focal Fossa)</a> and later." }
+                       { "description": "<strong>Snapshots:</strong> supported on <a href=\"https://en.wikipedia.org/wiki/Ubuntu_version_history#Ubuntu_22.04_LTS_(Jammy_Jellyfish)\">Ubuntu 22.04 LTS (Jammy Jellyfish)</a> and later." }
                      ]
                    },
                    { "name": "macOS",
                      "entries": [
-                       { "description": "<strong>Snapshots:</strong> supported on <a href=\"https://en.wikipedia.org/wiki/MacOS_Big_Sur\">macOS 11 (Big Sur)</a> and later." }
+                       { "description": "<strong>Snapshots:</strong> supported on <a href=\"https://en.wikipedia.org/wiki/MacOS_Big_Sur\">macOS 13 (Ventura)</a> and later." }
                      ]
                    }
                  ]
