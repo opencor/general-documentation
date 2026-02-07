@@ -41,6 +41,7 @@
         <a class="noHover" href="downloads/index.html"><img class="downloads" src="res/pics/downloads.png" width=144 height=48 alt="Downloads"></a>
 
         <div class="main">
+${SPECIAL_ANNOUNCEMENT}
             <p>
                 <a href="${PROJECT_URL}">${PROJECT_NAME}</a> is ${PROJECT_DESCRIPTION}.
                 Here are a few links, which you might find useful:
