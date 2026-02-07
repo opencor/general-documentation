@@ -45,6 +45,24 @@ macro(build_documentation PROJECT_NAME)
 
         set(ADDITIONAL_COPIED_FILES)
     else()
+        set(SPECIAL_ANNOUNCEMENT "
+        <div class=\"announcement\" style=\"box-shadow: none; text-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none;\">
+            <h1 class=\"announcement-title\">🌐 OpenCOR is moving to the Web!</h1>
+            <p class=\"announcement-text\">
+                We are currently working on a new Web-based version of OpenCOR.
+                You can have a look at what is coming up at:
+            </p>
+            <div class=\"announcement-button-container\">
+                <a href=\"https://opencor.ws/app\" class=\"announcement-button\">opencor.ws/app</a>
+            </div>
+            <p class=\"announcement-text\">\
+                <a href=\"res/tutorials/OpenCOR & CellDL/Tutorial on OpenCOR & CellDL.pptx\" download class=\"announcement-link\">Tutorial on OpenCOR & CellDL</a>&nbsp;&nbsp;\
+                <a href=\"res/tutorials/OpenCOR & CellDL/BG example 3.2.cellml\" download class=\"announcement-link\">Supporting CellML file</a>\
+            </p>\
+            <p class=\"announcement-text\" style=\"margin-top: 26px;\">
+                <strong>Note:</strong> a desktop version of OpenCOR can also be downloaded from <a href=\"https://github.com/opencor/webapp/releases/latest\">here</a>.
+            </p>\
+        </div>")
         set(PROJECT_ADDITIONAL_TEAM_MEMBERS "
                 <tr>
                     <td>
